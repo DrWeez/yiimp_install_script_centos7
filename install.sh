@@ -74,11 +74,13 @@ Q1="CREATE DATABASE IF NOT EXISTS utopooldb;"
 Q2="GRANT ALL ON *.* TO 'panel'@'localhost' IDENTIFIED BY '$password';"
 Q3="FLUSH PRIVILEGES;"
 SQL="${Q1}${Q2}${Q3}"
+echo "Mot de passe MYSQL"
 sudo mysql -u root -p -e "$SQL"
 # create stratum user
 Q1="GRANT ALL ON *.* TO 'stratum'@'localhost' IDENTIFIED BY '$password2';"
 Q2="FLUSH PRIVILEGES;"
 SQL="${Q1}${Q2}"
+echo "Mot de passe MYSQL"
 sudo mysql -u root -p -e "$SQL"  
 sleep 3
 
