@@ -14,6 +14,7 @@ cd $HOME
 
 mkdir install && cd install
 git clone https://github.com/tpruvot/yiimp
+git clone https://github.com/xavatar/yiimp_install_scrypt_centos7
 sleep 3
 
 cd $HOME/install/yiimp/blocknotify
@@ -56,11 +57,11 @@ sudo chown -R apache:apache /var/log/debug.log
 sudo chmod -R 775 /var/web
 sudo chmod -R 775 /var/stratum
 sudo chmod -R 777 /var/web/yaamp/runtime
-sudo chmod -R 775 /var/web/serverconfig.php
+sudo chmod -R 775 /var/web/serverconfig.phpcd 
 sudo chmod -R 644 /var/log/debug.log
 sleep 3
 
-sudo cd /home/pool/yiimp_install_scrypt_centos7
+sudo cd $HOME/yiimp_install_scrypt_centos7
 sudo cp serverconfig.php /var/web/
 sudo chmod -R 775 /var/web/serverconfig.php
 sudo ln -s /var/web/ /var/www/html/
