@@ -31,7 +31,7 @@ define('YAAMP_ADMIN_IP', '90.53.66.1'); // samples: "80.236.118.26,90.234.221.11
 define('YAAMP_ADMIN_WEBCONSOLE', true);
 define('YAAMP_NOTIFY_NEW_COINS', true);
 define('YAAMP_DEFAULT_ALGO', 'x11');
-define('YAAMP_USE_NGINX', true);
+define('YAAMP_USE_NGINX', false);
 // Exchange public keys (private keys are in a separate config file)
 define('EXCH_CRYPTOPIA_KEY', '');
 define('EXCH_POLONIEX_KEY', '');
