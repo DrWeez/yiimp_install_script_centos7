@@ -61,7 +61,7 @@ sudo chmod -R 775 /var/web/serverconfig.phpcd
 sudo chmod -R 644 /var/log/debug.log
 sleep 3
 
-sudo cd $HOME/install/yiimp_install_scrypt_centos7
+cd $HOME/install/yiimp_install_scrypt_centos7
 sudo cp serverconfig.php /var/web/
 sudo chmod -R 775 /var/web/serverconfig.php
 sudo ln -s /var/web/ /var/www/html/
