@@ -85,13 +85,12 @@ sudo mysql -u root -p -e "$SQL"
 sleep 3
 
 echo "Import Database "
-read -e -p "Enter Password MYSQL : " dbpass
+read -e -p "Mot de passe MYSQL : " dbpass
 echo "Peforming the SQL import"
 echo ""
 cd $HOME/install/yiimp/sql
 sudo gunzip 2016-04-03-yaamp.sql.gz
 # import sql dump
-echo "Mot de passe MYSQL"
 sudo mysql -u root -p$dbpass utopooldb < 2016-04-03-yaamp.sql
 sudo mysql -u root -p$dbpass utopooldb < 2016-04-24-market_history.sql
 sudo mysql -u root -p$dbpass utopooldb < 2016-04-27-settings.sql
