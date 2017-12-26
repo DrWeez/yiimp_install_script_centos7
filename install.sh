@@ -57,7 +57,6 @@ sudo chown -R apache:apache /var/log/debug.log
 sudo chmod -R 775 /var/web
 sudo chmod -R 775 /var/stratum
 sudo chmod -R 777 /var/web/yaamp/runtime
-sudo chmod -R 775 /var/web/serverconfig.phpcd 
 sudo chmod -R 644 /var/log/debug.log
 sleep 3
 
