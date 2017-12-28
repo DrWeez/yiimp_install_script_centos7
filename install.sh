@@ -69,23 +69,21 @@ sleep 3
 
 clear
 echo "Now for the database fun!"
+read -e -p "Mot de passe MYSQL : " dbpass
 # create database
 Q1="CREATE DATABASE IF NOT EXISTS utopooldb;"
 Q2="GRANT ALL ON *.* TO 'panel'@'localhost' IDENTIFIED BY '$password';"
 Q3="FLUSH PRIVILEGES;"
 SQL="${Q1}${Q2}${Q3}"
-echo "Mot de passe MYSQL"
-sudo mysql -u root -p -e "$SQL"
+sudo mysql -u root -p$dbpass -e "$SQL"
 # create stratum user
 Q1="GRANT ALL ON *.* TO 'stratum'@'localhost' IDENTIFIED BY '$password2';"
 Q2="FLUSH PRIVILEGES;"
 SQL="${Q1}${Q2}"
-echo "Mot de passe MYSQL"
-sudo mysql -u root -p -e "$SQL"  
+sudo mysql -u root -p$dbpass -e "$SQL"  
 sleep 3
 
 echo "Import Database "
-read -e -p "Mot de passe MYSQL : " dbpass
 echo "Peforming the SQL import"
 echo ""
 cd $HOME/install/yiimp/sql
