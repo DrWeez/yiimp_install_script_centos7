@@ -119,10 +119,3 @@ database=utopooldb
 host=localhost
 ' | sudo -E tee ~/.my.cnf >/dev/null 2>&1
       sudo chmod 0600 ~/.my.cnf
-
-	  
-
-
-
-
-
