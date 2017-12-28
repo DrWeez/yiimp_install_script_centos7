@@ -122,7 +122,6 @@ host=localhost
 
 	  
 
-systemctl restart httpd.service
 
 
 
