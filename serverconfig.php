@@ -5,7 +5,7 @@ define('YAAMP_LOGS', '/var/log');
 define('YAAMP_HTDOCS', '/var/web');
 define('YAAMP_BIN', '/var/bin');
 define('YAAMP_DBHOST', 'localhost');
-define('YAAMP_DBNAME', 'yiimpfrontend');
+define('YAAMP_DBNAME', 'utopooldb');
 define('YAAMP_DBUSER', 'panel');
 define('YAAMP_DBPASSWORD', 'motdepassedb');
 define('YAAMP_PRODUCTION', true);
@@ -23,11 +23,11 @@ define('YIIMP_PUBLIC_BENCHMARK', false);
 define('YIIMP_FIAT_ALTERNATIVE', 'USD'); // USD is main
 define('YAAMP_USE_NICEHASH_API', false);
 define('YAAMP_BTCADDRESS', '1PqjApUdjwU9k4v1RDWf6XveARyEXaiGUz');
-define('YAAMP_SITE_URL', 'vps496236.ovh.net');
+define('YAAMP_SITE_URL', '192.168.1.134');
 define('YAAMP_STRATUM_URL', YAAMP_SITE_URL); // change if your stratum server is on a different host
 define('YAAMP_SITE_NAME', 'UtoPool');
 define('YAAMP_ADMIN_EMAIL', 'xavatar@wanadoo.fr');
-define('YAAMP_ADMIN_IP', '90.53.66.1'); // samples: "80.236.118.26,90.234.221.11" or "10.0.0.1/8"
+define('YAAMP_ADMIN_IP', '192.168.1.5'); // samples: "80.236.118.26,90.234.221.11" or "10.0.0.1/8"
 define('YAAMP_ADMIN_WEBCONSOLE', true);
 define('YAAMP_NOTIFY_NEW_COINS', true);
 define('YAAMP_DEFAULT_ALGO', 'x11');
